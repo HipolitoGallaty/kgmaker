@@ -34,7 +34,7 @@
 </body>
 
 <div layout:fragment="jscontent">
-	<script src="https://cdn.bootcss.com/lodash.js/3.5.0/lodash.min.js"></script>
+	<script th:src="@{/js/lodash.min.js}"></script>
 	<script th:inline="javascript" type="text/javascript">
 	var app = new Vue({
 	    el: '#app',

@@ -290,7 +290,7 @@
             return item.FileName;
         },
         uploadsuccess(res, file) {
-            if (res.success == 1) {
+            if (res.success === 1) {
                 for (var i = 0; i < res.results.length; i++) {
                     var fileitem = res.results[i];
                     this.nodeimagelist.push({fileurl: fileitem.url});
